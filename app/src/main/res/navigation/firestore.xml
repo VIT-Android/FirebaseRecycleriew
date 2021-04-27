@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firestore"
+    app:startDestination="@id/firestoreFragment">
+
+    <fragment
+        android:id="@+id/firestoreFragment"
+        android:name="com.example.firebaserecyclerview.firestore.FirestoreFragment"
+        android:label="fragment_firestore"
+        tools:layout="@layout/fragment_firestore">
+        <action
+            android:id="@+id/action_firestoreFragment_to_firestoreDetailsFragment"
+            app:destination="@id/firestoreDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firestoreDetailsFragment"
+        android:name="com.example.firebaserecyclerview.firestore.FirestoreDetailsFragment"
+        android:label="FirestoreDetailsFragment">
+        <argument
+            android:name="student"
+            app:argType="com.example.firebaserecyclerview.firestore.FirestoreModel" />
+    </fragment>
+</navigation>

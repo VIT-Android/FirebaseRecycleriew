@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/realtime"
+    app:startDestination="@id/realtimeFragment">
+
+    <fragment
+        android:id="@+id/realtimeFragment"
+        android:name="com.example.firebaserecyclerview.RealtimeFragment"
+        android:label="fragment_realtime"
+        tools:layout="@layout/fragment_realtime" />
+</navigation>
